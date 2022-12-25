@@ -26,7 +26,7 @@ var finances = [
     ['Jan-2012', -755566],
     ['Feb-2012', 1170593],
     ['Mar-2012', 252788],
-    ['Apr-2012', 1151518],
+    ['Apr-2012', 1151518],//
     ['May-2012', 817256],
     ['Jun-2012', 570757],
     ['Jul-2012', 506702],
@@ -86,3 +86,34 @@ var finances = [
     ['Jan-2017', 138230],
     ['Feb-2017', 671099]
 ];
+
+console.log("Financial Analysis");
+console.log("-------------------");
+
+//Total months in the variable finances
+var totalMonths = finances.length;
+console.log("Total Months: " + totalMonths);
+
+//Net total amount of profit/loses of all months together
+var netTotal = 0;
+
+for (var i = 0; i < finances.length; i++) {
+    netTotal += finances[i][1];
+}
+
+console.log("Total: $" + netTotal);
+
+// The average of the changes in Profit/Losses over the entire period.
+
+var averageChange = 0;
+
+for (var i = 0; i < finances.length; i++) {
+    averageChange = finances[1][1] - finances[0][1]
+    // averageChange = finances[2][1] - finances[1][1]
+
+}
+
+console.log("Average Change: $" + averageChange);
+
+
+
