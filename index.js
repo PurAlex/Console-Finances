@@ -87,6 +87,10 @@ var finances = [
     ['Feb-2017', 671099]
 ];
 
+var amount = finances[0];
+var profitLost = amount[1];
+console.log(profitLost);
+
 console.log("Financial Analysis");
 console.log("-------------------");
 
@@ -105,15 +109,35 @@ console.log("Total: $" + netTotal);
 
 // The average of the changes in Profit/Losses over the entire period.
 
-var averageChange = 0;
+var averageChange;
 
 for (var i = 0; i < finances.length; i++) {
-    averageChange = finances[1][1] - finances[0][1]
-    // averageChange = finances[2][1] - finances[1][1]
+
+    averageChange = finances[1][1] - finances[0][1],
+        finances[2][1] - finances[1][1],
+        finances[3][1] - finances[2][1],
+        finances[4][1] + finances[3][1];
+
+    // averageChange += averageChange;
+
+    // averageChange = averageChange / 4;
+    //     averageChange = finances[2][1] - finances[1][1],
+    //     averageChange = finances[3][1] - finances[2][1],
+    //     averageChange = finances[4][1] + finances[3][1];
 
 }
+
 
 console.log("Average Change: $" + averageChange);
 
 
+//The greatest increase in profits(date and amount) over the entire period.
+var greatestIncrease = 0;
 
+for (var i = 0; i < finances.length; i++) {
+    if (profitLost <= profitLost) {
+        console.log("Greatest Increase in Profits: " + amount);
+    } else {
+        console.log("Nothing");
+    }
+}
