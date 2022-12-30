@@ -87,9 +87,19 @@ var finances = [
     ['Feb-2017', 671099]
 ];
 
-var amount = finances[0];
-var profitLost = amount[1];
-console.log(profitLost);
+// Display only the date
+var dateOnly = [];
+for (var i = 0; i < finances.length; i++) {
+    dateOnly.push(finances[i][0]);
+}
+// console.log(dateOnly);
+
+// Display only the profit/loss
+var numbersOnly = [];
+for (let i = 0; i < finances.length; i++) {
+    numbersOnly.push(finances[i][1]);
+}
+// console.log(numbersOnly);
 
 console.log("Financial Analysis");
 console.log("-------------------");
@@ -132,12 +142,38 @@ console.log("Average Change: $" + averageChange);
 
 
 //The greatest increase in profits(date and amount) over the entire period.
-var greatestIncrease = 0;
 
-for (var i = 0; i < finances.length; i++) {
-    if (profitLost <= profitLost) {
-        console.log("Greatest Increase in Profits: " + amount);
-    } else {
-        console.log("Nothing");
-    }
-}
+
+// for (var i = 0; i < finances.length; i++) {
+
+
+//     if (greatestIncrease > finances) {
+
+
+//     }
+// }
+
+var greatestIncrease = Math.max(...numbersOnly);
+console.log("Greatest Increase in Profits: " + greatestIncrease);
+
+
+
+// The greatest decrease in losses (date and amount) over the entire period.
+
+
+
+// var greatestDecrease = finances;
+
+// for (var i = 0; i < finances.length; i++) {
+//     if (finances[i] < greatestDecrease) {
+//         greatestDecrease = finances[i];
+//     }
+// }
+
+var greatestDecrease = Math.min(...numbersOnly);
+
+
+
+console.log("Greatest Decrase in Profits: " + greatestDecrease);
+
+
