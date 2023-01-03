@@ -18,7 +18,7 @@ N/A
 
 ## Usage 
 
-To access the console first [click here]() then settings and developer tools, there click console and the console will display the content of the project.
+To access the console first [click here](https://puralex.github.io/Console-Finances/) then settings and developer tools, there click console and the console will display the content of the project.
 
 ## Credits
 
